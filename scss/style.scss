@@ -1,0 +1,78 @@
+$bg-color: #333;
+$font-color: #fff;
+$pri-color: #008ed6;
+$dark-overlay: rgba(0, 0, 0, 0.7);
+$icon-size: 30px;
+
+body {
+  background: $bg-color;
+  color: $font-color;
+}
+
+.navbar {
+  border-bottom: 3px solid $pri-color;
+  opacity: 0.8;
+}
+
+#home-section {
+  background: url("../img/home.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 700px;
+
+  .dark-overlay {
+    background-color: $dark-overlay;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 700px;
+  }
+
+  .home-inner {
+    padding: 150px;
+  }
+
+  .card-form {
+    opacity: 0.8;
+  }
+
+  .fa {
+    color: $pri-color;
+    background: #fff;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: $icon-size;
+  }
+}
+
+#explore-section,
+#share-section {
+  .fa {
+    color: #fff;
+    background: #333;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: $icon-size;
+  }
+}
+
+#create-section {
+  .fa {
+    color: $pri-color;
+    background: #fff;
+    padding: 4px;
+    border-radius: 5px;
+    font-size: $icon-size;
+  }
+}
+
+@media (max-width: 600px) {
+  .card-respond {
+    width: 342px;
+    margin: auto;
+    position: relative;
+    left: -130px;
+    top: 0;
+  }
+}
